@@ -1,0 +1,10 @@
+.siteMain {
+  display: grid;
+  grid-template-columns: var(--centerGrid);
+  padding-block-end: 4rem;
+
+  & > * {
+    grid-column: main;
+    width: 100%;
+  }
+}

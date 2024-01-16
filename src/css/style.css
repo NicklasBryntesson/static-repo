@@ -1,18 +1,31 @@
-@import "01-Setup/variables.css";
 @import "01-Setup/normalize.css";
 @import "01-Setup/reset.css";
 @import "01-Setup/fonts.css";
+@import "01-Setup/props.css";
 
-@import "02-Elements/typography.css";
-@import "02-Elements/buttons.css";
+/* @import "03-Layout/layout.css"; */
 
-@import "03-Layout/layout.css";
-
-@import "04-Global/site-header.css";
-@import "04-Global/site-main.css";
-@import "04-Global/site-footer.css";
-
-@import "05-Components/card.css";
-@import "05-Components/fancy-button.css";
+@import "04-Global/siteHeader.css";
+@import "04-Global/siteMain.css";
+@import "04-Global/siteFooter.css";
 
 @import "06-Pages/pages.css";
+
+.colorBoxGrid {
+  display: flex;
+  gap: 2rem;
+  margin-block: 2rem;
+
+  & > * {
+    padding: 2rem;
+    border: 0.125rem solid black;
+  }
+
+  & .localColorBox {
+    background-color: var(--color--local);
+  }
+
+  & .remoteColorBox {
+    background-color: var(--color--remote);
+  }
+}
