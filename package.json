@@ -13,5 +13,8 @@
     "postcss-nesting": "^12.0.2",
     "vite": "^5.0.11",
     "vite-plugin-handlebars": "^2.0.0"
+  },
+  "dependencies": {
+    "@nicklas-bryntesson-kan/distributed-designsystem-example": "^1.0.0"
   }
 }
